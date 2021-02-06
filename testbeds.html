@@ -21,18 +21,18 @@
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="/images/favicon.png">
 	<title>ExCALIBUR H&ES Testbeds – ExCALIBUR H&ES</title>
-	<meta name="description" content="Testbed projects that the programme has funded">
+	<meta name="description" content="Testbed projects that the programme has supported">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="ExCALIBUR H&ES Testbeds – ExCALIBUR H&ES">
-	<meta name="twitter:description" content="Testbed projects that the programme has funded">
-	<meta name="twitter:image:src" content="https://ukri-excalibur.github.io/images/feature.jpg">
+	<meta name="twitter:description" content="Testbed projects that the programme has supported">
+	<meta name="twitter:image:src" content="http://localhost:4000/images/feature.jpg">
 
 	<!-- Facebook OpenGraph -->
 	<meta property="og:title" content="ExCALIBUR H&ES Testbeds – ExCALIBUR H&ES" />
-	<meta property="og:description" content="Testbed projects that the programme has funded" />
-	<meta property="og:image" content="https://ukri-excalibur.github.io/images/feature.jpg" />
+	<meta property="og:description" content="Testbed projects that the programme has supported" />
+	<meta property="og:image" content="http://localhost:4000/images/feature.jpg" />
 
 	
 	<!-- Font Embed Code -->
@@ -66,7 +66,7 @@
 </head>
 
 
-<body class="loading ajax-loading" data-site-url="https://ukri-excalibur.github.io" data-page-url="/testbeds">
+<body class="loading ajax-loading" data-site-url="http://localhost:4000" data-page-url="/testbeds">
 
 
 	<header class="header">
@@ -137,7 +137,7 @@
 	<div class="wrap">
 
 		<h1>ExCALIBUR H&ES Testbeds</h1>
-		<p>Testbed projects that the programme has funded</p>
+		<p>Testbed projects that the programme has supported</p>
 
 	</div>
 
@@ -149,30 +149,7 @@
 
 		<article class="single-post">
 
-			<h2 id="available-for-use">Available for use</h2>
-
-<h3 id="durham-amd-gpu-testbed">Durham AMD GPU testbed</h3>
-
-<p><img src="images/mi50.png" alt="AMD MI50 GPU" style="float: right; width: 450px; height: 330px;" /></p>
-<ul>
-  <li>2 x Dell R7525 servers purchased, each with:
-    <ul>
-      <li>2 x AMD EPYC 7542 32 core 2.9GHz CPUs</li>
-      <li>3 x AMD MI50 GPUs</li>
-    </ul>
-  </li>
-  <li>AMD software, ROCM, AOCC, AOMP, GCC with offload support installed</li>
-  <li>Extends Durham AMD cluster</li>
-  <li>Already in use by researchers at various sites including the University of Bristol and the Hartree Centre
-    <ul>
-      <li>First journal submission for research using this testbed already submitted!</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="under-development">Under development</h2>
-
-<p>A number of other testbed systems are under development, funded by the initial ExCALIBUR H&amp;ES closed calls:</p>
+			<p>A number of testbed systems are under development under the auspices of ExCALIBUR H&amp;ES:</p>
 
 <table>
   <thead>
@@ -185,40 +162,52 @@
   </thead>
   <tbody>
     <tr>
-      <td>UCL</td>
-      <td>Interconnect Testing and Developing: the adaptable cluster</td>
-      <td>Ethernet and InfiniBand interconnects to support ~60 nodes. Measure Application performance as a function of component action</td>
-      <td>Mellanox</td>
+      <td>Birmingham</td>
+      <td><a href="next-silicon">Novel hardware / software testbed</a></td>
+      <td>Evaluate novel accelerator technology from Next Silicon and performance of the main codes used by UKRI researchers including HPC apps</td>
+      <td>Next Silicon, Lenovo</td>
     </tr>
     <tr>
-      <td>Durham</td>
-      <td>Exascale solutions for Storage and RAM as Services: Phase 1 and AMD test System</td>
-      <td>Gen-Z – Resource lending via the Fabric. BlueField-2 – data control in a cluster. With AMD: Servers, CPU and GPU</td>
-      <td>Dell, Mellanox</td>
+      <td>Bristol</td>
+      <td><a href="graphcore">Graphcore testbed</a></td>
+      <td>Evaluate the Graphcore IPU-M2000 system for high performance and scientific computing applications and provide a novel architecture for the community to test and develop AI compatible codes</td>
+      <td>Dell, Graphcore</td>
     </tr>
     <tr>
       <td>Cambridge</td>
-      <td>File Systems for Exascale</td>
+      <td>Exascale data testbed</td>
       <td>Hardware and Software solutions</td>
       <td>Dell, Intel</td>
     </tr>
     <tr>
-      <td>Bristol</td>
-      <td>Novel Accelerators</td>
-      <td>Characterising new architectures</td>
-      <td>Dell, Graphcore</td>
+      <td>Durham</td>
+      <td><a href="storage-and-ram">Storage and RAM as Services</a></td>
+      <td>First UK install of both BlueField-2 and Gen-Z for HPC. The Durham Adaptable Memory System has distinct components that are required to investigate adaptable memory technologies</td>
+      <td>AMD, Dell, Mellanox</td>
     </tr>
     <tr>
-      <td>Leicester</td>
-      <td>Improving Application performance using Arm Processor units and attached accelerators</td>
-      <td>Insights into Architectural diversity for a range of applications</td>
-      <td>Arm, HPE</td>
+      <td>Durham</td>
+      <td><a href="amd-gpu">AMD GPU testbed</a></td>
+      <td>Provide researchers with the opportunity to test their code on the AMD MI50 GPU as a resource for ExCALIBUR and the wider UK research community</td>
+      <td>AMD, Dell</td>
     </tr>
     <tr>
       <td>Edinburgh</td>
-      <td>Testing and improving APIs for a range of processor unit and accelerator systems</td>
-      <td>Deep level look at accelerator interaction with other processing units and components</td>
-      <td>Industry partners TBC</td>
+      <td><a href="cerebras">Cerebras testbed</a></td>
+      <td>First wafer scale system installed in Europe. Will facilitate a deep level look at accelerator interaction with other processing units and components</td>
+      <td>Cerebras, HPE</td>
+    </tr>
+    <tr>
+      <td>Leicester</td>
+      <td><a href="arm-gpu">ARM+GPU testbed</a></td>
+      <td>Ensure that ARM servers work harmoniously with accelerators – with any shortcomings understood, documented and reported to vendors. Provide an ARM+GPU testbed for ExCALIBUR and the wider UK research community</td>
+      <td>ARM, HPE</td>
+    </tr>
+    <tr>
+      <td>UCL</td>
+      <td><a href="adaptable-cluster">Interconnect Testing and Developing: The UCL Adaptable Cluster</a></td>
+      <td>Measure the impacts of a variety of in-network technologies – doing computation at the switch level and accelerator off-load. Characterise breadth and depth of system and application performance. Provide ARM FORGE debugging, profiling and optimisation tools for key centres in the ExCALIBUR project.</td>
+      <td>Mellanox</td>
     </tr>
   </tbody>
 </table>
@@ -249,7 +238,7 @@
 		<p class="footer__text">ExCALIBUR - Exascale Computing ALgorithms and Infrastructures Benefitting UK Research</p>
 
 		<div class="footer__copyright">
-			<span>© 2020 ExCALIBUR H&ES</span>
+			<span>© 2021 ExCALIBUR H&ES</span>
 			<a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a>
 		</div>
 

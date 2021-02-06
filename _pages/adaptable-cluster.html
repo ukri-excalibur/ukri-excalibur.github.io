@@ -20,19 +20,19 @@
 
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>Page Not Found – ExCALIBUR H&ES</title>
-	<meta name="description" content="Sorry – the page your looking for doesn't exist.">
+	<title>The UCL Adaptable Cluster Project – ExCALIBUR H&ES</title>
+	<meta name="description" content="">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Page Not Found – ExCALIBUR H&ES">
-	<meta name="twitter:description" content="Sorry – the page your looking for doesn't exist.">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/feature.jpg">
+	<meta name="twitter:title" content="The UCL Adaptable Cluster Project – ExCALIBUR H&ES">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image:src" content="http://localhost:4000/images/bluefield-chip.png">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Page Not Found – ExCALIBUR H&ES" />
-	<meta property="og:description" content="Sorry – the page your looking for doesn't exist." />
-	<meta property="og:image" content="http://localhost:4000/images/feature.jpg" />
+	<meta property="og:title" content="The UCL Adaptable Cluster Project – ExCALIBUR H&ES" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="http://localhost:4000/images/bluefield-chip.png" />
 
 	
 	<!-- Font Embed Code -->
@@ -66,7 +66,7 @@
 </head>
 
 
-<body class="loading ajax-loading" data-site-url="http://localhost:4000" data-page-url="/404.html">
+<body class="loading ajax-loading" data-site-url="http://localhost:4000" data-page-url="/_pages/adaptable-cluster.html">
 
 
 	<header class="header">
@@ -126,25 +126,57 @@
 	
 	<div class="page">
 
-		<div class="page__content" data-page-title="Page Not Found – ExCALIBUR H&ES">
+		<div class="page__content" data-page-title="The UCL Adaptable Cluster Project – ExCALIBUR H&ES">
 
-			<section class="hero">
+			<section class="hero hero--single">
 
-	<div class="hero__image" style="background-image: url(/images/feature.jpg)">
+	<div class="hero__image" style="background-image: url(/images/bluefield-chip.png)">
 		<div class="hero__overlay"></div>
 	</div>
 
 	<div class="wrap">
 
-		<h1>Page not found.</h1>
-		<p class="hero__text editable">Sorry – the page your looking for doesn't exist.</p>
-		<p class="hero__text editable">Perhaps you typed the URL incorrectly, or it may have moved.</p>
-		<p><a href="/" class="button button--large">Back To Home</a></p>
+		<h1>The UCL Adaptable Cluster Project</h1>
+		<p>University College London</p>
 
 	</div>
 
 </section>
 
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+
+			The ExCALIBUR Interconnect Demonstrator consists of two non-blocking interconnect fabrics supporting up to 60 attached nodes in a dual fabric configuration.  One fabric is 200 Gbps HDR Mellanox Infiniband configured so that it is possible to construct multi-hop routes between nodes.
+
+![BlueField chip](images/bluefield-chip.png){:style="float: right; width: 350px; height: 250px; padding: 15px;"}
+
+The second fabric is 100Gbps Mellanox Ethernet, with [BlueField](https://www.nvidia.com/en-us/networking/products/data-processing-unit/) adaptors on each node. This allows us to measure the impacts of a variety of in-network technologies – doing computation at the switch level (requiring multiple hops) and looking at the possibility of using acceleration on the adaptor to off-load some of the work of the host machine (the BlueField cards).  We also aim to compare “state of the art” in using Ethernet as an Interconnect with Infiniband to measure whether on RDMA on Converged Ethernet has reached the point where it is a performant, cost effective interconnect.  
+
+![BlueField-1 card](images/bluefield-1.png){:style="float: right; width: 350px; height: 250px; padding: 15px;"}
+
+In order to understand system and application performance the Adaptable Cluster collects metrics from several sources in the system and dashboards to visualise them, which then allow focus on how to improve system design and resource usage.   Alerts can be set up to draw attention to performance issues as well. The testbed uses components such as Elasticsearch, Kibana, Logstash and Prometheus to provide insights into both breadth and depth of system and application performance.
+
+
+![ARM FORGE](images/arm-forge.png){:style="float: right; width: 350px; height: 250px; padding: 15px;"}
+
+UCL is the location of the ExCALIBUR instance of the [ARM FORGE](https://www.arm.com/products/development-tools/server-and-hpc/forge) Application.   This is an application that supports the debugging, profiling and optimisation of codes that use distributed resources, such as a cluster.   It is both CPU and GPU enabled.   UCL will support ARM FORGE for key centres in the ExCALIBUR project.   It will also be available to UCL projects that are not associated with ExCALIBUR.   This package enables jobs that use up to 2048 cores to be analysed in terms of code efficiency.  One outcome of this project will be methodologies that enable results from Prometheus and ARM Forge to be used to improve system design, architecture performance and application performance.
+
+## Access to the testbed systems
+
+The Excalibur H&ES testbeds are prioritised for access by ExCALIBUR projects, but also available for use by the wider UK research community - contact the ExCALIBUR H&ES <a href="mailto:excalibur-hes@jiscmail.ac.uk?subject=ExCALIBUR%20HES%20testbed%20access%20enquiry">programme office</a> to discuss your requirements. Please note that the testbeds are offered on a best efforts basis rather than a service footing, as befits their experimental status.
+
+<a href="mailto:excalibur-hes@jiscmail.ac.uk?subject=ExCALIBUR%20HES%20testbed%20access%20enquiry" class="button button--large">Get in touch</a>
+
+
+
+		</article>
+
+	</div>
+
+</section>
 
 		</div>
 
